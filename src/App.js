@@ -8,6 +8,7 @@ import Cards from "./components/Cards/Cards";
 function App() {
   // Aqui se va a montar el fetch con API
   let [pageNumber, setPageNumber] = useState(1);
+  let [fetchedData, updateFetchedData] = useState([]);
   let api = `https://rickandmortyapi.com/api/character/?page=${pageNumber}`;
 
   useEffect(() => {
@@ -15,7 +16,7 @@ function App() {
 
     (async function () {
       let data = await fetch(api).then((res) => res.json());
-      console.log(data);
+      console.log(data.results);
     })();
   }, [api]);
 
