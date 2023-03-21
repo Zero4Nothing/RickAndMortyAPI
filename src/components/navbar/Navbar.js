@@ -1,9 +1,9 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import "./Navbar.css";
-import { Link } from "react-router-dom";
+/* import { Link } from "react-router-dom"; */
 import logo from "../../assets/IconoRickMorty.png";
-React.createElement("nav", { style: "background-color:#e3f2fd" });
+/* React.createElement("nav", { style: "background-color:#e3f2fd" });*/
 function Navbar() {
   return (
     <>

@@ -16,3 +16,4 @@ Prototipo Desktop en Figma: https://www.figma.com/proto/ZG62qZQbJ6nRvZISTWT6x7/R
 
 Prototipo Mobil en Figma: https://www.figma.com/proto/ZG62qZQbJ6nRvZISTWT6x7/Rick-and-Morty-API-Project-(Desktop-%2B-Mobile)?node-id=415-474&scaling=min-zoom&page-id=92%3A11&starting-point-node-id=415%3A474
 
+Link al repositorio en Github: https://github.com/Zero4Nothing/RickAndMortyAPI.git
