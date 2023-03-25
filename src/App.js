@@ -5,8 +5,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap";
 import Home from "./pages/home/Home";
 import Footer from "./components/footer/Footer";
-import Main from "./components/main/Main";
-import BtnCaps from './components/btnCaps/BtnCaps';
 import Personajes from "./pages/personajes/Personajes";
 import Capitulos from "./pages/capitulos/Capitulos";
 import Generador from "./pages/generador/Generador";
