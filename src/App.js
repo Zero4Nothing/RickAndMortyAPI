@@ -16,13 +16,11 @@ function App() {
     <>
       <Navbar />
       <Routes>
-        <Route path="/home" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/personajes" element={<Personajes />} />
         <Route path="/capitulos" element={<Capitulos />} />
         <Route path="/generador" element={<Generador />} />
       </Routes>
-      <Main />
-      <BtnCaps/>
       <Footer />
     </>
   );
