@@ -2,6 +2,7 @@ import React from 'react'
 import { useCharacter } from '../../hooks/useCharacter'
 import CharacterCard from '../../components/CharacterCard/CharacterCard'
 import { useState } from 'react'
+import Spinner from '../../components/spinner/Spinner'
 
 function Generador() {
   const [number, setNumber] = useState()
@@ -13,23 +14,35 @@ function Generador() {
   }
   console.log(number)
 
-  // if (isLoading) {
-  //   return <h1>Cargando...</h1>;
-  // }
-
-  // if (!character) {
-  //   return null;
-  // }
-
   return (
-    <div className='d-flex align-items-center text-center'>
-  <div className="m-auto">
-    <h1 className='pt-3'>Generador Automático</h1>
-    <p>Presiona el botón para generar un personaje aleatorio</p>
-    {character && <CharacterCard image={character.image} name={character.name} />}
-    <button className="btn btn-outline-secondary shadow" onClick={generateRandomNumber}>Generar</button>
-  </div>
-</div>
+    <>
+      {isLoading ? <Spinner/> : <div className='d-flex align-items-center text-center'>
+        <div className="m-auto">
+          <h1 className='pt-3'>Generador Automático</h1>
+          <p>Presiona el botón para generar un personaje aleatorio</p>
+          {character && 
+          <CharacterCard 
+          image={character.image} 
+          name={character.name}  
+          id={character.id}
+          status={character.status}
+          species={character.species}
+          type={character.type}
+          gender={character.gender}
+          origin={character.origin.name}
+          location={character.location.name}
+          created={character.created}
+          
+          
+          />}
+          <button className="btn btn-outline-secondary shadow" onClick={generateRandomNumber}>Generar</button>
+
+        </div>
+      </div>}
+
+
+    </>
+
   )
 }
 

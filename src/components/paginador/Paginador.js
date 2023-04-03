@@ -3,10 +3,7 @@ import { useState } from 'react'
 import {BsFillCaretLeftFill, BsFillCaretRightFill} from 'react-icons/bs'
 import './Paginador.css'
 
-
-
 function Paginador({prev, next, handledPrev, handledNext}) {
-
 const [page, setPage]= useState(1)
 const prevPageHandled = () => {
     handledPrev()

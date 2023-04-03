@@ -6,7 +6,7 @@ Estructura de la Aplicación
 Home
 Personajes
 Capitulos
-Generador Automatico (Modelo: https://guespud.github.io/-exercise_react_graphql/)
+Generador Automático (Modelo: https://guespud.github.io/-exercise_react_graphql/)
 
 API Rick and Morty:
 
