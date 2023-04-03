@@ -1,0 +1,12 @@
+.pagination{
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 10px;
+}
+.icon-page{
+    font-size: 30px;
+}
+.pagination p{
+    font-size: 30px;
+}

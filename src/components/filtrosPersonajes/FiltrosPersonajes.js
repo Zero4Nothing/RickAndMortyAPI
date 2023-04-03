@@ -3,9 +3,9 @@ import React from 'react'
 
 function FiltrosPersonajes() {
     return (
-        <div className='d-flex justify-center'>
+        <div className='d-flex justify-center '>
             { /* Button trigger modal */}
-            <button type="button" className="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <button type="button" className="btn btn-outline-secondary  w-50  m-auto" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 Filtros Avanzados
             </button>
 
@@ -17,13 +17,13 @@ function FiltrosPersonajes() {
                             <h5 className="modal-title" id="exampleModalLabel">Filtros</h5>
                             <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <div className="modal-body d-flex d-col">
+                        <div className="modal-body d-flex d-col justify-content-evenly">
 
                             <div class="dropdown">
                                 <button className="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                                     Especies
                                 </button>
-                                <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <ul className="dropdown-menu " aria-labelledby="dropdownMenuButton1">
                                     <li><a className="dropdown-item" href="#">Action</a></li>
                                     <li><a className="dropdown-item" href="#">Another action</a></li>
                                     <li><a className="dropdown-item" href="#">Something else here</a></li>

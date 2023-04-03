@@ -4,7 +4,7 @@ import "./Navbar.css";
 /* import { Link } from "react-router-dom"; */
 import logo from "../../assets/IconoRickMorty.png";
 import { Link } from "react-router-dom";
-/* React.createElement("nav", { style: "background-color:#e3f2fd" });*/
+/* React.createElemet("nav", { style: "background-color:#e3f2fd" });*/
 function Navbar() {
   return (
     <>
@@ -35,17 +35,17 @@ function Navbar() {
           >
             <ul className="navbar-nav ml-auto">
               <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" to="/personajes">
+                <Link className="nav-link " aria-current="page" to="/personajes">
                   Personajes
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to="/capitulos" className="nav-link" href="#">
+                <Link to="/capitulos" className="nav-link">
                   Capítulos
                 </Link>
               </li>
-              <Link to="/generador" className="nav-item">
-                <a className="nav-link">Generador</a>
+              <Link to="/generador" className="nav-link">
+                Generador
               </Link>
             </ul>
           </div>

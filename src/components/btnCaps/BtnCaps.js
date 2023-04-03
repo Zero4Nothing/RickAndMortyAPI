@@ -1,15 +1,18 @@
 import React from "react";
 import "./BtnCaps.css";
+import { Link } from "react-router-dom";
 
 function BtnCaps() {
   return (
 
     <>
-    <div className="button-container">
-  <button className="button">Ver capítulos</button>
-  </div>
+      <div className="button-container">
+        <Link to="/personajes" >
+          <button className="button">Ver capítulos</button>
+        </Link>
+      </div>
 
-</>
+    </>
   );
 }
 

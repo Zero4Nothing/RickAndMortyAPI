@@ -1,25 +1,13 @@
 import React from 'react';
 
-const SearchBar = () => {
+const SearchBar = ({changeSearch}) => {
   return (
-    <div className="container">
-      <div className="row justify-content-center">
-        <div className="col-12 col-md-8 col-lg-6">
-          <div className="input-group mb-3">
-            <div className="input-group-prepend">
-              <span className="input-group-text">
-                <i className="fas fa-search"></i>
-              </span>
-            </div>
-            <input
-              type="text"
-              className="form-control"
-              placeholder="Filtra por nombre"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
+    <input
+    onChange={changeSearch}
+    type="text"
+    className="form-control w-50 m-auto mb-3   "
+    placeholder="Filtra por nombre"
+  />
   );
 };
 
