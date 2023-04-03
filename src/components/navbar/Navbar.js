@@ -34,19 +34,21 @@ function Navbar() {
             id="navbarsExample07"
           >
             <ul className="navbar-nav ml-auto">
-              <li className="nav-item">
+              <li className="nav-item m-auto">
                 <Link className="nav-link " aria-current="page" to="/personajes">
                   Personajes
                 </Link>
               </li>
-              <li className="nav-item">
+              <li className="nav-item m-auto">
                 <Link to="/capitulos" className="nav-link">
                   Capítulos
                 </Link>
               </li>
+              <li className="nav-item m-auto">
               <Link to="/generador" className="nav-link">
                 Generador
               </Link>
+              </li>
             </ul>
           </div>
         </div>
