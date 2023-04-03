@@ -13,7 +13,6 @@ function Card({ img, name, species, episode, air_date }) {
                 <p className="card-text small">{species}</p>
                 {
                     air_date?<p className="card-text small">{air_date}</p>:null
-
                 }
           </div>
         </div>
