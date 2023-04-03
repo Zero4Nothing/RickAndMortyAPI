@@ -22,7 +22,7 @@ const nextPageHandled = () => {
   return (
     <div className="pagination" >
         {prev && <BsFillCaretLeftFill className='icon-page' onClick={prevPageHandled}/>}
-        <p>{page}</p>
+        <p className='page'>{page}</p>
         {next && <BsFillCaretRightFill className='icon-page' onClick={nextPageHandled}/>}
     </div>
   )

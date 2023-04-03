@@ -6,6 +6,11 @@ gap: 10px;
 }
 .icon-page{
     font-size: 30px;
+    align-self: center;
+}
+.page{
+    font-size: 30px;
+    align-self: center;
 }
 .pagination p{
     font-size: 30px;

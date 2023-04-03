@@ -9,7 +9,7 @@ function Navbar() {
   return (
     <>
       <nav
-        className="navbar navbar-expand-lg bg-light text-bg-dark sticky-top"
+        className="navbar navbar-expand-lg bg-light text-bg-dark sticky-top shadow"
         aria-label="Eighth navbar example"
         style={{ backgroundColor: "#e3f2fd" }}
       >

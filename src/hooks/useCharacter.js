@@ -1,15 +1,15 @@
-import { useState } from "react";
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 
-export const useCharacter=(id)=>{
+export const useCharacter = (id) => {
     const [character, setCharacter] = useState(null);
-
-
+    const [isLoading, setIsLoading] = useState(false);
 
     const getCharacter = async (id) => {
+        setIsLoading(true);
         const response = await fetch(`https://rickandmortyapi.com/api/character/${id}`)
-        const data = await response.json()
-        setCharacter(data)
+        const data = await response.json();
+        setCharacter(data);
+        setIsLoading(false);
     }
 
     useEffect(() => {
@@ -17,7 +17,5 @@ export const useCharacter=(id)=>{
         getCharacter(id)
     }, [id])
 
-
-    return { character }
-
-} 
+    return { character, isLoading }
+};

@@ -1,21 +1,12 @@
 import React from 'react'
 
-function CharacterCard({image,name}) {
+function CharacterCard({ image, name }) {
   return (
-    <div class="card mb-3" style={{maxWidth: "540px"}}>
-    <div class="row g-0">
-      <div class="col-md-4">
-        <img src={image} class="img-fluid rounded-start" alt="..."/>
-      </div>
-      <div class="col-md-8">
-        <div class="card-body">
-          <h5 class="card-title">{name}</h5>
-          <p class="card-text">.</p>
-          <p class="card-text"><small class="text-muted"></small></p>
-        </div>
-      </div>
+    <div className="card mb-3 m-auto shadow" style={{ maxWidth: "400px" }}>
+      <img src={image} className="img-fluid m-auto p-4" alt="..." />
+      <h4 className="card-title text-center pb-3">{name}</h4>
+
     </div>
-  </div>
   )
 }
 
