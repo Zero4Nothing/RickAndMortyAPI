@@ -1,15 +1,14 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
-import { useState } from 'react'
 import { listFilter, listGender } from './DataOption'
 
-function FiltrosPersonajes({handleChangeState,handleChangeGender,handledClearFilter}) {
+function FiltrosPersonajes({ handleChangeState, handleChangeGender, handledClearFilter }) {
 
     return (
-        <div className='bg-success d-flex justify-content-evenly p-4 align-items-center'>
-            <div className="form-group" >
-                <label className="pr-3 "for={listFilter[0].status}>Estado</label>
-                <select id="{listFilter[0].status}" name="{listFilter[0].status} "onChange={handleChangeState}>
+        <div className='bg-light d-flex justify-content-evenly p-4 align-items-center'>
+            <div className="form-group text-center" >
+                <label className="p-3" for={listFilter[0].status}>Estado</label>
+                <select placeholder="Estado" className="form-select form-select-lg mb-3" id="{listFilter[0].status}" name="{listFilter[0].status} " onChange={handleChangeState}>
                     {
                         listFilter.map((item) => (
                             <option key={item.id} value={item.status}>{item.status}</option>
@@ -17,9 +16,9 @@ function FiltrosPersonajes({handleChangeState,handleChangeGender,handledClearFil
                     }
                 </select>
             </div>
-            <div className="form-group">
-                <label for={listGender[0].gender}>Género</label>
-                <select id={listGender[0].gender} name={listGender[0].gender} onChange={handleChangeGender}>
+            <div className="form-group text-center">
+                <label className="p-3" for={listGender[0].gender}>Género</label>
+                <select className="form-select form-select-lg mb-3" id={listGender[0].gender} name={listGender[0].gender} onChange={handleChangeGender}>
                     {
                         listGender.map((item) => (
                             <option key={item.id} value={item.gender}>{item.gender}</option>
@@ -27,7 +26,7 @@ function FiltrosPersonajes({handleChangeState,handleChangeGender,handledClearFil
                     }
                 </select>
             </div>
-      <button onClick={handledClearFilter}>Limpiar</button>
+            <button onClick={handledClearFilter} type="button" class="btn btn-outline-secondary btn-lg">Limpiar</button>
         </div>
 
         // <div className='d-flex justify-center '>

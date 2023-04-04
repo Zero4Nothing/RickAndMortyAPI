@@ -6,18 +6,18 @@ function CharacterCard({ image, name, id, status, species, type, gender, origin,
 
       <div className="col-12 row">
         <div className="col-md-6 ">
-        <img src={image} className="img-fluid m-auto p-4 rounded-circle align-self-center" alt="..." />
+          <img src={image} className="img-fluid m-auto p-4 rounded-circle align-self-center" alt="..." />
         </div>
         <div className="col-md-6">
-        <h4 className="card-title text-center pb-3">{name.toUpperCase()}</h4>
-        <p>ID PERSONAJE: {id}</p>
-        <p>ESTADO: {status}</p>
-        <p>ESPECIE: {species}</p>
-        <p>TIPO: {type}</p>
-        <p>GÉNERO: {gender}</p>
-        <p>ORÍGEN: {origin}</p>
-        <p>LOCACIÓN: {location}</p>
-        <p>CREADO EN: {created}</p>
+          <h4 className="card-title text-center pb-3">{name.toUpperCase()}</h4>
+          <p>ID PERSONAJE: {id}</p>
+          <p>ESTADO: {status}</p>
+          <p>ESPECIE: {species}</p>
+          <p>TIPO: {type}</p>
+          <p>GÉNERO: {gender}</p>
+          <p>ORÍGEN: {origin}</p>
+          <p>LOCACIÓN: {location}</p>
+          <p>CREADO EN: {created}</p>
         </div>
       </div>
     </div>
