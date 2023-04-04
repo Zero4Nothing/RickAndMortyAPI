@@ -7,7 +7,7 @@ function BtnCaps() {
 
     <>
       <div className="button-container">
-        <Link to="/personajes" >
+        <Link to="/capitulos" >
           <button className="button">Ver capítulos</button>
         </Link>
       </div>
